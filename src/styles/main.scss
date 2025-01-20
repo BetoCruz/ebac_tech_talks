@@ -1,3 +1,27 @@
-body{
-    background-color: green;
+@use'hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    // tela de celular
+    @media (max-width: 640px) {
+        max-width: 80%;
+        
+    }
+
+    // tela de tablet ou netbook
+    @media (max-width: 1024px) {
+        max-width: 90%;
+        
+    }
 }
